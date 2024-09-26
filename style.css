@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 main{
     display: flex;
     justify-content: center;
@@ -34,4 +38,11 @@ main{
 }
 .desk:nth-child(6){
     background-color: green;
+}
+
+@media(max-width: 1024px){
+    .desk{
+        width: 80px;
+        height: 80px;
+    }
 }
