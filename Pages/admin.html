@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TrackMyProf (ADMIN)</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/login-form.css">
+    </head>
+    <body>
+        <header>
+            <section class="left-section">
+                <div class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <img src="../images/logo.png" alt="Logo" class="logo">
+                <span class="page-title">TrackMyProf: Full-Time Faculty Monitoring System at CCC</span>
+                <p>TrackMyProf</p>
+            </section>
+            <section class="right-section">
+                <p class="clock"></p>
+                <div class='dropdown'>
+                    <button class='dropbtn'>ADMIN</button>
+                    <div class='dropdown-content'>
+                        <a href='../index.html'><span class="material-symbols-outlined">logout</span>Logout</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                 <span class="side-title">TrackMyProf: Full-Time Faculty Monitoring System at CCC</span>
+                 <p class="side-clock"></p>
+                <h2>Status</h2>
+                <div class="color-coding">
+                    <ul>
+                        <li><span class="color-code available"></span>Available</li>
+                        <li><span class="color-code busy"></span>Busy</li>
+                        <li><span class="color-code away"></span>Away</li>
+                        <li><span class="color-code vacant"></span>Vacant</li>
+                    </ul>
+                </div>
+                <h2>Legend</h2>
+                <div class="legend">
+                    <ul>
+                        <li><span class="dot"></span> - Example 1</li>
+                        <li><span class="dot"></span> - Example 2</li>
+                        <li><span class="dot"></span> - Example 3</li>
+                        <li><span class="dot"></span> - Example 4</li>
+                        <li><span class="dot"></span> - Example 5</li>
+                        <li><span class="dot"></span> - Example 6</li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <section class="main-section">
+                    <h1>Welcome to TrackMyProf</h1>
+                    <p>This is the main page of the system.</p>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p>&copy; 2024 TrackMyProf. All rights reserved.</p>
+        </footer>
+        <script src="../js/clock.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
