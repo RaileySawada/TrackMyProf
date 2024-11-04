@@ -111,6 +111,16 @@
                     return false;
                 }
             }
+            
+            const popupBtn = document.querySelector(".popup-btn");
+            const popupForm = document.querySelector(".popup-login-form");
+            const closeBtn = document.querySelector(".close-btn");
+            popupBtn.addEventListener("click", () => {
+                popupForm.classList.toggle("active");
+            });
+            closeBtn.addEventListener("click", () => {
+                popupForm.classList.toggle("active");
+            });
         </script>
         <script src="js/clock.js"></script>
         <script src="js/script.js"></script>
