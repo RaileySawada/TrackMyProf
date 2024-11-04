@@ -10,3 +10,13 @@ const content = document.querySelector(".dropdown-content");
 dropdown.addEventListener("click", () => {
     content.classList.toggle("active");
 });
+
+const popupBtn = document.querySelector(".popup-btn");
+const popupForm = document.querySelector(".popup-login-form");
+const closeBtn = document.querySelector(".close-btn");
+popupBtn.addEventListener("click", () => {
+    popupForm.classList.toggle("active");
+});
+closeBtn.addEventListener("click", () => {
+    popupForm.classList.toggle("active");
+});

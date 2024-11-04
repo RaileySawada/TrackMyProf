@@ -238,7 +238,7 @@ header{
     background-color: red;
 }
 .vacant{
-    background-color: white;
+    background-color: grey;
 }
 
 .legend{
@@ -388,7 +388,9 @@ main{
     }
     .clock, .side-clock{
         font-size: 10px;
-        margin-right: 10px;
+    }
+    .clock{
+        margin: 0 10px;
     }
     .dropdown{
         width: 120px;
