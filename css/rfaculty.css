@@ -371,6 +371,7 @@
         grid-template-columns: 60px 60px 60px 60px;
     }
     .dci-lowerdesks-cont{
+        margin-top: 20px;
         grid-template-columns: 30px 68px 68px 68px 68px 68px;
     }
 }
@@ -413,6 +414,7 @@
         grid-template-columns: 51px 51px 51px 51px;
     }
     .dci-lowerdesks-cont{
+        margin-top: 18px;
         grid-template-columns: 43px 57.5px 57.5px 57.5px 57.5px 57.5px;
     }
     #b-selector{
