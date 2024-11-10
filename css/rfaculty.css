@@ -322,7 +322,7 @@
         grid-row: 1;
     }
     .dci-lowerdesks-cont{
-        margin-top: 20px;
+        margin-top: 19px;
         grid-row: 1;
     }
     .dci-upperdesks-cont{
@@ -347,41 +347,117 @@
         grid-template-rows: 38px;
     }
     .dba-upperdesks-cont{
-        grid-template-columns: 90px 66px 66px 66px 66px;
+        grid-template-columns: 98px 68px 68px 68px 68px;
     }
     .dba-space{
         grid-template-rows: 100px;
     }
     .dba-lowerdesks-cont{
-        grid-template-columns: 90px 88px 88px 88px;
+        grid-template-columns: 98px 90px 90px 90px;
     }
 
     .dci-space{
         grid-template-rows: 38px;
     }
     .dci-upperdesks-cont{
-        grid-template-columns: 90px 77px 77px 77px;
+        grid-template-columns: 98px 79px 79px 79px;
     }
     .dci-middledesks-cont{
-        grid-template-rows: 75px;
-        grid-template-columns: 90px
+        grid-template-rows: 76px;
+        grid-template-columns: 98px
     }
     .dci-middle1, .dci-middle2{
-        grid-template-columns: 58px 58px 58px 58px;
+        grid-template-columns: 60px 60px 60px 60px;
     }
     .dci-lowerdesks-cont{
-        grid-template-columns: 26px 66px 66px 66px 66px 66px;
+        grid-template-columns: 30px 68px 68px 68px 68px 68px;
     }
 }
 @media(max-width: 425px){
     .rizal-building{
         width: 375px;
         height: 573px;
+        grid-template-columns: 375px;
+        grid-template-rows: 212px 144px 100px;
+    }
+    .dba-upperdesks-cont,.dba-lowerdesks-cont, .dci-upperdesks-cont, .dci-lowerdesks-cont, .dci-middle1, .dci-middle2, .dci-lowerdesks-cont{
+        grid-template-rows: 32px;
+    }
+    .dba-upperdesks-cont{
+        grid-template-columns: 100px 57.5px 57.5px 57.5px 57.5px;
+    }
+    .dba-space{
+        grid-template-rows: 86px;
+    }
+    .dba-lowerdesks-cont{
+        margin-top: -2px;
+        grid-template-columns: 100px 77px 77px 77px;
+    }
+
+    .dci-space{
+        grid-template-rows: 38px;
+    }
+    .dci-upperdesks-cont{
+        margin-top: -4px;
+        grid-template-columns: 100px 68px 68px 68px;
+    }
+    .dci-middledesks-cont{
+        grid-template-rows: 60px;
+        grid-template-columns: 100px
+    }
+    .dci-middles{
+        margin-top: -4px;
+    }
+    .dci-middle1, .dci-middle2{
+        grid-template-columns: 51px 51px 51px 51px;
+    }
+    .dci-lowerdesks-cont{
+        grid-template-columns: 43px 57.5px 57.5px 57.5px 57.5px 57.5px;
+    }
+    #b-selector{
+        margin-top: 20px;
     }
 }
 @media(max-width: 375px){
     .rizal-building{
         width: 319px;
         height: 522px;
+        grid-template-columns: 319px;
+        grid-template-rows: 192px 132px 100px;
+    }
+    .dba-upperdesks-cont,.dba-lowerdesks-cont, .dci-upperdesks-cont, .dci-lowerdesks-cont, .dci-middle1, .dci-middle2, .dci-lowerdesks-cont{
+        grid-template-rows: 30px;
+    }
+    .dba-upperdesks-cont{
+        grid-template-columns: 80px 52.5px 52.5px 52.5px 52.5px;
+    }
+    .dba-space{
+        grid-template-rows: 78px;
+    }
+    .dba-lowerdesks-cont{
+        margin-top: -2px;
+        grid-template-columns: 80px 70px 70px 70px;
+    }
+
+    .dci-space{
+        grid-template-rows: 38px;
+    }
+    .dci-upperdesks-cont{
+        margin-top: -6px;
+        grid-template-columns: 80px 61px 61px 61px;
+    }
+    .dci-middledesks-cont{
+        grid-template-rows: 50px;
+        grid-template-columns: 80px
+    }
+    .dci-middles{
+        margin-top: -8px;
+    }
+    .dci-middle1, .dci-middle2{
+        grid-template-columns: 46px 46px 46px 46px;
+    }
+    .dci-lowerdesks-cont{
+        margin-top: 16px;
+        grid-template-columns: 26px 53px 53px 53px 53px 53px;
     }
 }
