@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TrackMyProf (ADMIN)</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/login-form.css">
+        <link rel="stylesheet" href="css/rfaculty.css">
     </head>
     <body>
         <header>
@@ -26,34 +26,18 @@
             </section>
             <section class="right-section">
                 <p class="clock"></p>
-                <form class="login-form">
-                    <input type="text" name="id" placeholder="Enter Admin ID">
-                    <input type="password" name="password" placeholder="Enter Password">
-                    <button type="submit" name="submit" class="loginBtn">Login</button>
-                </form>
-                <button class="popup-btn">Login</button>
-                <form class="popup-login-form">
-                    <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
-                    <h2>ADMIN LOGIN</h2>
-                    <hr>
-                    <div class="id-cont">
-                        <div class="icon-cont">
-                            <i class="fa-solid fa-id-badge"></i>
-                        </div>
-                        <input type="text" name="id" placeholder="Enter Admin ID">
+                <div class='dropdown'>
+                    <button class='dropbtn'>ADMIN</button>
+                    <div class='dropdown-content'>
+                        <a href='#'><span class="material-symbols-outlined">logout</span>Logout</a>
                     </div>
-                    <div class="pass-cont">
-                        <div class="icon-cont">
-                            <i class="fa-solid fa-lock"></i>
-                        </div>
-                        <input type="password" name="password" placeholder="Enter Password">
-                    </div>
-                    <button name="submit" class="loginBtn">Login</button>
-                </form>
+                </div>
             </section>
         </header>
         <div class="content-wrapper">
+            <!-- sidebar -->
             <aside class="sidebar">
+                <!-- for color coding of the desk -->
                  <span class="side-title">TrackMyProf: Full-Time Faculty Monitoring System at CCC</span>
                  <p class="side-clock"></p>
                 <h2>Status</h2>
@@ -65,6 +49,7 @@
                         <li><span class="color-code vacant"></span>Vacant</li>
                     </ul>
                 </div>
+                <!-- for legend -->
                 <h2>Legend</h2>
                 <div class="legend">
                     <ul>
@@ -77,52 +62,76 @@
                     </ul>
                 </div>
             </aside>
+            <!-- main content -->
             <main>
                 <section class="main-section">
-                    <h1>Welcome to TrackMyProf</h1>
-                    <p>This is the main page of the system.</p>
+                    <select title="building-selector" name="building-selector" id="b-selector">
+                        <option value="Admin Building">Admin Building</option>
+                        <option value="Rizal Building">Rizal Building</option>
+                    </select>
+                    <div class="rizal-building">
+                        <div class="pantry">
+                            <button>Pantry</button>
+                        </div>
+                        <div class="dba">
+                            <div class="dba-upperdesks-cont">
+                                <div class="dba-upper-space"></div>
+                                <button class="rdesk">D1</button>
+                                <button class="rdesk">D2</button>
+                                <button class="rdesk">D3</button>
+                                <button class="rdesk">D4</button>
+                            </div>
+                            <div class="dba-space"></div>
+                            <div class="dba-lowerdesks-cont">
+                                <div class="dba-lower-space"></div>
+                                <button class="rdesk">D5</button>
+                                <button class="rdesk">D6</button>
+                                <button class="rdesk">D7</button>
+                            </div>
+                        </div>
+                        <div class="dci">
+                            <div class="dci-upperdesks-cont">
+                                <div class="dci-upper-space"></div>
+                                <button class="rdesk">D8</button>
+                                <button class="rdesk">D9</button>
+                                <button class="rdesk">D10</button>
+                            </div>
+                            <div class="dci-space"></div>
+                            <div class="dci-middledesks-cont">
+                                <div class="dci-middle-space"></div>
+                                <div class="dci-middles">
+                                    <div class="dci-middle1">
+                                        <button class="rdesk">D11</button>
+                                        <button class="rdesk">D12</button>
+                                        <button class="rdesk">D13</button>
+                                        <button class="rdesk">D14</button>
+                                    </div>
+                                    <div class="dci-middle2">
+                                        <button class="rdesk">D15</button>
+                                        <button class="rdesk">D16</button>
+                                        <button class="rdesk">D17</button>
+                                        <button class="rdesk">D18</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dci-space"></div>
+                            <div class="dci-lowerdesks-cont">
+                                <div class="dci-lower-space"></div>
+                                <button class="rdesk">D19</button>
+                                <button class="rdesk">D20</button>
+                                <button class="rdesk">D21</button>
+                                <button class="rdesk">D22</button>
+                                <button class="rdesk">D23</button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
         <footer>
             <p>&copy; 2024 TrackMyProf. All rights reserved.</p>
         </footer>
-        <script>
-            const form = document.querySelector("form");
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-
-                const email = form.id.value;
-                const password = form.password.value;
-
-                const authenticated = authentication(email, password)
-
-                if(authenticated){
-                    window.location.href = "Pages/admin.html";
-                }else{
-                    alert("Login Failed");
-                }
-            })
-
-            function authentication(email, password){
-                if(email === "CCC-TMPADMIN" && password === "Tmpadmin123"){
-                    return true;
-                }else{
-                    return false;
-                }
-            }
-            
-            const popupBtn = document.querySelector(".popup-btn");
-            const popupForm = document.querySelector(".popup-login-form");
-            const closeBtn = document.querySelector(".close-btn");
-            popupBtn.addEventListener("click", () => {
-                popupForm.classList.toggle("active");
-            });
-            closeBtn.addEventListener("click", () => {
-                popupForm.classList.toggle("active");
-            });
-        </script>
-        <script src="js/script.js"></script>
         <script src="js/clock.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
