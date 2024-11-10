@@ -82,7 +82,8 @@
 
 /* Rizal Faculty Desks */
 .rdesk{
-    background-color: transparent;
+    background-color: grey;
+    cursor: pointer;
 }
 
 #b-selector{
